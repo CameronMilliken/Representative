@@ -15,9 +15,7 @@ struct TopLevelDictionary: Decodable {
 struct Representative: Decodable {
     let name: String
     let party: String
-    let state: String
     let district: String
-    let phone: String
     let office: String
     let link: String
 }
