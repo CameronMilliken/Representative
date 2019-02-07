@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B42D636B220CBD9D00346AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D636A220CBD9D00346AF7 /* AppDelegate.swift */; };
-		B42D636D220CBD9D00346AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D636C220CBD9D00346AF7 /* ViewController.swift */; };
 		B42D6370220CBD9D00346AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D636E220CBD9D00346AF7 /* Main.storyboard */; };
 		B42D6372220CBD9D00346AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D6371220CBD9D00346AF7 /* Assets.xcassets */; };
 		B42D6375220CBD9D00346AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D6373220CBD9D00346AF7 /* LaunchScreen.storyboard */; };
+		B42D637E220CCF0500346AF7 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D637D220CCF0500346AF7 /* Representative.swift */; };
+		B42D6381220CCF9C00346AF7 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D6380220CCF9C00346AF7 /* States.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B42D6367220CBD9D00346AF7 /* Representative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42D636A220CBD9D00346AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B42D636C220CBD9D00346AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B42D636F220CBD9D00346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42D6371220CBD9D00346AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42D6374220CBD9D00346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42D6376220CBD9D00346AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42D637D220CCF0500346AF7 /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		B42D6380220CCF9C00346AF7 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		B42D6369220CBD9D00346AF7 /* Representative */ = {
 			isa = PBXGroup;
 			children = (
-				B42D636A220CBD9D00346AF7 /* AppDelegate.swift */,
-				B42D636C220CBD9D00346AF7 /* ViewController.swift */,
 				B42D636E220CBD9D00346AF7 /* Main.storyboard */,
+				B42D637C220CCEDC00346AF7 /* Resources */,
+				B42D637F220CCF7400346AF7 /* Models */,
+			);
+			path = Representative;
+			sourceTree = "<group>";
+		};
+		B42D637C220CCEDC00346AF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B42D6371220CBD9D00346AF7 /* Assets.xcassets */,
+				B42D636A220CBD9D00346AF7 /* AppDelegate.swift */,
 				B42D6373220CBD9D00346AF7 /* LaunchScreen.storyboard */,
 				B42D6376220CBD9D00346AF7 /* Info.plist */,
 			);
-			path = Representative;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B42D637F220CCF7400346AF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B42D637D220CCF0500346AF7 /* Representative.swift */,
+				B42D6380220CCF9C00346AF7 /* States.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42D636D220CBD9D00346AF7 /* ViewController.swift in Sources */,
+				B42D6381220CCF9C00346AF7 /* States.swift in Sources */,
+				B42D637E220CCF0500346AF7 /* Representative.swift in Sources */,
 				B42D636B220CBD9D00346AF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
