@@ -9,12 +9,20 @@
 import UIKit
 
 class StateDetailTableViewController: UITableViewController {
+    
+    var representative: [Representative] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    var state: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
     }
+    
 
     // MARK: - Table view data source
 

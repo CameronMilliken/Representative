@@ -16,6 +16,7 @@
 		B42D6383220CD2A000346AF7 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D6382220CD2A000346AF7 /* StateListTableViewController.swift */; };
 		B42D6385220CD2C600346AF7 /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D6384220CD2C600346AF7 /* StateDetailTableViewController.swift */; };
 		B42D6387220CD2EF00346AF7 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D6386220CD2EF00346AF7 /* RepresentativeController.swift */; };
+		B42D638C220CE3B000346AF7 /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42D638B220CE3B000346AF7 /* RepresentativeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B42D6382220CD2A000346AF7 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
 		B42D6384220CD2C600346AF7 /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
 		B42D6386220CD2EF00346AF7 /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		B42D638B220CE3B000346AF7 /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B42D637F220CCF7400346AF7 /* Models */,
 				B42D6388220CD2F400346AF7 /* Model Controller */,
 				B42D638A220CD32100346AF7 /* Storyboard */,
+				B42D638D220CE4DF00346AF7 /* View */,
 				B42D6389220CD2FF00346AF7 /* View Controllers */,
 			);
 			path = Representative;
@@ -114,6 +117,14 @@
 				B42D636E220CBD9D00346AF7 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B42D638D220CE4DF00346AF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B42D638B220CE3B000346AF7 /* RepresentativeTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42D638C220CE3B000346AF7 /* RepresentativeTableViewCell.swift in Sources */,
 				B42D6381220CCF9C00346AF7 /* States.swift in Sources */,
 				B42D6383220CD2A000346AF7 /* StateListTableViewController.swift in Sources */,
 				B42D637E220CCF0500346AF7 /* Representative.swift in Sources */,

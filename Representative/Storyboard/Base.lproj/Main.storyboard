@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8r9-Db-0eV" rowHeight="48" style="IBUITableViewCellStyleDefault" id="1j9-Sw-IVp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stateCell" textLabel="8r9-Db-0eV" rowHeight="48" style="IBUITableViewCellStyleDefault" id="1j9-Sw-IVp">
                                 <rect key="frame" x="0.0" y="28" width="375" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1j9-Sw-IVp" id="QFa-nW-Jlt">
@@ -35,7 +35,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="EF3-ii-Zw4" kind="show" identifier="toDetail" id="Ukw-sr-lSd"/>
+                                    <segue destination="EF3-ii-Zw4" kind="show" identifier="toRepDetail" id="Ukw-sr-lSd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
