@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--States-->
         <scene sceneID="42B-gO-81B">
             <objects>
                 <tableViewController id="Fqy-Ow-1mJ" customClass="StateListTableViewController" customModule="Representative" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,22 +44,22 @@
                             <outlet property="delegate" destination="Fqy-Ow-1mJ" id="LSY-ms-VB2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="2a0-NL-xeQ"/>
+                    <navigationItem key="navigationItem" title="States" id="2a0-NL-xeQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVF-5G-fAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692" y="61.619190404797607"/>
         </scene>
-        <!--Table View Controller-->
+        <!--State Detail Table View Controller-->
         <scene sceneID="jW3-FE-vUO">
             <objects>
-                <tableViewController id="EF3-ii-Zw4" sceneMemberID="viewController">
+                <tableViewController id="EF3-ii-Zw4" customClass="StateDetailTableViewController" customModule="Representative" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TLb-hV-ME3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="146" id="ZvJ-uz-gLk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="repCell" rowHeight="146" id="ZvJ-uz-gLk" customClass="RepresentativeTableViewCell" customModule="Representative" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="146"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZvJ-uz-gLk" id="PHC-fz-3Eu">
@@ -109,6 +109,13 @@
                                         <constraint firstItem="mgu-iX-LGP" firstAttribute="top" secondItem="PHC-fz-3Eu" secondAttribute="top" constant="8" id="cxa-ge-3cu"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="districtLabel" destination="88L-4J-mJr" id="tXs-iR-I1E"/>
+                                    <outlet property="linkLabel" destination="cuF-c9-GiW" id="o5z-Wz-6L2"/>
+                                    <outlet property="nameLabel" destination="51b-Sf-XtB" id="W3w-Dt-XhT"/>
+                                    <outlet property="officeLabel" destination="xCs-Ei-3BK" id="t34-us-l9q"/>
+                                    <outlet property="partyLabel" destination="8iK-7Z-iET" id="DoL-cW-t7J"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
