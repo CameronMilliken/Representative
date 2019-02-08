@@ -20,11 +20,13 @@ class StateDetailTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        guard let state = state else { return }
+        RepresentativeController.searchRepresentatives(state: state) { (representatives) in
+            self.representative = representatives
+        }
     }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return representative.count
     }
 
